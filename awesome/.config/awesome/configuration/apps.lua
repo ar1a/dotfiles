@@ -15,6 +15,7 @@ return {
   run_on_start_up = {
     'compton --config ' .. filesystem.get_configuration_dir() .. '/configuration/compton.conf',
     'xfce4-power-manager', -- Power manager
+    'barrier'
     -- '/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 & eval $(gnome-keyring-daemon -s --components=pkcs11,secrets,ssh,gpg)' -- credential manager
   }
 }
