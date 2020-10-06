@@ -6,11 +6,7 @@
 
 {
   imports =
-    [
-    /etc/nixos/hardware-configuration.nix
-    ./system.nix
-    ./collectd.nix
-    ];
+    [ /etc/nixos/hardware-configuration.nix ./system.nix ./collectd.nix ];
 
   networking.hostId = "80fd9d3a";
 
@@ -24,13 +20,12 @@
     };
   };
 
-  boot.initrd.luks.devices = [
-    {
-      name = "root";
+  boot.initrd.luks.devices = {
+    root = {
       device = "/dev/disk/by-uuid/e5f879ff-cc1e-448f-a5c6-73327b7631a3";
       allowDiscards = true;
-    }
-  ];
+    };
+  };
 
   programs.light.enable = true;
 
@@ -50,9 +45,7 @@
 
   # hardware video decoding
   hardware.opengl.enable = true;
-  hardware.opengl.extraPackages = with pkgs; [
-    intel-media-driver
-  ];
+  hardware.opengl.extraPackages = with pkgs; [ intel-media-driver ];
 
   # This value determines the NixOS release with which your system is to be
   # compatible, in order to avoid breaking some software such as database

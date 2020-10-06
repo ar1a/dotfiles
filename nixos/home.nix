@@ -47,7 +47,7 @@
     pwgen
     exercism
     insomnia
-    emacsGit
+    emacs
     rink
     nixfmt
     station
@@ -79,9 +79,9 @@
     # haskell
     cabal-install # cabal2nix
     haskellPackages.styx
-    ghc
+    # ghc
     hlint
-    haskellPackages.hindent
+    # haskellPackages.hindent
     haskellPackages.brittany
     haskellPackages.hpack
     stack
@@ -98,12 +98,12 @@
 
   home.sessionVariables = { MOZ_USE_XINPUT2 = 1; };
 
-  nixpkgs.overlays = [
-    (import (builtins.fetchTarball {
-      url =
-        "https://github.com/nix-community/emacs-overlay/archive/master.tar.gz";
-    }))
-  ];
+  # nixpkgs.overlays = [
+  #   (import (builtins.fetchTarball {
+  #     url =
+  #       "https://github.com/nix-community/emacs-overlay/archive/master.tar.gz";
+  #   }))
+  # ];
 
   programs = {
     #emacs.enable = true;
