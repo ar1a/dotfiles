@@ -109,7 +109,7 @@
 
   sound.enable = true;
 
-  time.timeZone = "Australia/Sydney";
+  time.timeZone = "Australia/Perth";
 
   users.users.aria = {
     isNormalUser = true;
