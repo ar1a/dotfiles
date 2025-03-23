@@ -1,5 +1,9 @@
 # dotfiles
 
+this relies on [chezmoi](https://www.chezmoi.io)
+
+if you're looking for my old dotfiles, see [here](https://github.com/ar1a/dotfiles-old)
+
 ## install
 `sh -c "$(curl -fsLS get.chezmoi.io/lb)" -- init --apply ar1a`
 
