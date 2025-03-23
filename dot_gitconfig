@@ -1,0 +1,5 @@
+[user]
+	name = Aria Edmonds
+	email = aria@ar1as.space
+[merge]
+	conflictstyle = diff3
