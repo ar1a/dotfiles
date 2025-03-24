@@ -143,8 +143,8 @@ r() {
 }
 
 alias path='sed s/:/\\n/g <<< $PATH'
-alias k="eza -lh"
-alias ka="eza -lah"
+alias k="eza -lh --group-directories-first"
+alias ka="k -a"
 alias lg="lazygit"
 
 export PATH=$PATH:/usr/local/go/bin
