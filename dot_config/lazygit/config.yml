@@ -1,0 +1,3 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/jesseduffield/lazygit/master/schema/config.json
+git:
+  overrideGpg: true # not needed for (passwordless?) ssh commit signing

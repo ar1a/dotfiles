@@ -1,5 +1,12 @@
 [user]
 	name = Aria Edmonds
 	email = aria@ar1as.space
+	signingkey = /home/aria/.ssh/id_ed25519.pub
 [merge]
 	conflictstyle = diff3
+[gpg]
+	format = ssh
+[commit]
+	gpgsign = true
+[tag]
+	gpgsign = true
