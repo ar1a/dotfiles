@@ -42,12 +42,6 @@ zmodule completion
 
 
 #
-# Aria Shit
-#
-zmodule fzf
-zmodule unixorn/fzf-zsh-plugin
-
-#
 # Modules that must be initialized last
 #
 
@@ -61,3 +55,6 @@ zmodule zsh-users/zsh-history-substring-search
 zmodule zsh-users/zsh-autosuggestions
 # }}} End configuration added by Zim install
 
+zmodule fzf
+zmodule joke/zim-chezmoi
+zmodule kiesman99/zim-zoxide
