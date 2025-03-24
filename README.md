@@ -7,6 +7,10 @@ if you're looking for my old dotfiles, see [here](https://github.com/ar1a/dotfil
 ## install
 `sh -c "$(curl -fsLS get.chezmoi.io/lb)" -- init --apply ar1a`
 
+## neovim config
+my neovim config resides at [ar1a/nvim-cfg](https://github.com/ar1a/nvim-cfg),
+but chezmoi will pull it for you
+
 ## secrets
 secrets rely on `op` being available on the path, make sure you setup
 [1password cli](https://developer.1password.com/docs/cli/get-started) and
