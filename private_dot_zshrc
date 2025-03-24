@@ -152,3 +152,7 @@ export PATH=$PATH:/home/aria/.cargo/bin
 export PATH=$PATH:/home/aria/.local/bin
 
 export EDITOR=nvim
+
+# `zmodule environment` sets NO_CLOBBER but goddamnit, i want clobber!
+setopt CLOBBER
+unsetopt EXTENDED_GLOB # same with EXTENDED_GLOB
